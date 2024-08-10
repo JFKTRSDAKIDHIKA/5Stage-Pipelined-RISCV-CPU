@@ -114,7 +114,7 @@ def generate_output(
     venus_cmd = [
         "java",
         "-jar",
-        str(venus_path),
+        str("D:\Repository\5-Stage-Pipeline-RISCV-CPU\tools\venus.jar"),
         str(asm_path),
         "--immutableText",
         "--trace",
