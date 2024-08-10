@@ -127,8 +127,10 @@ def generate_output(
         venus_cmd += ["--traceTotalNumCommands", str(num_cycles + 1)]
     if is_pipelined:
         venus_cmd += ["--traceTwoStage"]
+    print(f"venus_cmd: {venus_cmd}", venus_cmd)
     tmp_trace_file = tempfile.NamedTemporaryFile(delete=False)
     tmp_trace_path = Path(tmp_trace_file.name)
+
     with tmp_trace_file:
         proc = subprocess.Popen(
             venus_cmd, stdout=tmp_trace_file, encoding="utf-8", errors="ignore"
@@ -291,5 +293,4 @@ if __name__ == "__main__":
         input_paths = (proj_dir_path / "tests" / "integration-custom" / "in").glob(
             "*.s"
         )
-
     create_tests(input_paths, args.cycles, args.force)

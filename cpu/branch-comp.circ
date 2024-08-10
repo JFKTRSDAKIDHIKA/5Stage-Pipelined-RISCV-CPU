@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0-61c.b5e883a" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.b5e883a(https://github.com/61c-teach/logisim-evolution).
+<project source="3.8.0-61c.f1d5ac0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.f1d5ac0(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -107,6 +107,42 @@
     <comp lib="0" loc="(250,310)" name="Tunnel">
       <a name="label" val="BrUn"/>
     </comp>
+    <comp lib="0" loc="(450,140)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrData1"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(450,180)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrData2"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(450,240)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrData1"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(450,280)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrData2"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(600,200)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="BrUn"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(600,280)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="BrUn"/>
+      <a name="labelfont" val="SansSerif bold 9"/>
+    </comp>
+    <comp lib="0" loc="(650,170)" name="Tunnel">
+      <a name="label" val="BrEq"/>
+    </comp>
+    <comp lib="0" loc="(650,250)" name="Tunnel">
+      <a name="label" val="BrLt"/>
+    </comp>
     <comp lib="0" loc="(930,130)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="BrEq"/>
@@ -129,13 +165,22 @@
       <a name="locked" val="true"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="5" loc="(169,92)" name="Text">
+    <comp lib="2" loc="(620,170)" name="Multiplexer"/>
+    <comp lib="2" loc="(620,250)" name="Multiplexer"/>
+    <comp lib="3" loc="(520,160)" name="Comparator">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="3" loc="(520,260)" name="Comparator">
+      <a name="mode" val="unsigned"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="5" loc="(165,90)" name="Text">
       <a name="text" val="INPUTS to your circuit"/>
     </comp>
-    <comp lib="5" loc="(562,43)" name="Text">
+    <comp lib="5" loc="(560,40)" name="Text">
       <a name="text" val="DON'T CHANGE THE LOCATIONS OF THE INPUTS AND OUTPUTS!"/>
     </comp>
-    <comp lib="5" loc="(974,95)" name="Text">
+    <comp lib="5" loc="(970,95)" name="Text">
       <a name="text" val="OUTPUT from your circuit"/>
     </comp>
     <wire from="(1020,100)" to="(1020,210)"/>
@@ -146,6 +191,32 @@
     <wire from="(250,180)" to="(250,230)"/>
     <wire from="(250,270)" to="(250,290)"/>
     <wire from="(250,330)" to="(250,340)"/>
+    <wire from="(450,140)" to="(460,140)"/>
+    <wire from="(450,180)" to="(460,180)"/>
+    <wire from="(450,240)" to="(460,240)"/>
+    <wire from="(450,280)" to="(460,280)"/>
+    <wire from="(460,140)" to="(460,150)"/>
+    <wire from="(460,150)" to="(480,150)"/>
+    <wire from="(460,170)" to="(460,180)"/>
+    <wire from="(460,170)" to="(480,170)"/>
+    <wire from="(460,240)" to="(460,250)"/>
+    <wire from="(460,250)" to="(480,250)"/>
+    <wire from="(460,270)" to="(460,280)"/>
+    <wire from="(460,270)" to="(480,270)"/>
+    <wire from="(520,160)" to="(590,160)"/>
+    <wire from="(520,170)" to="(530,170)"/>
+    <wire from="(520,260)" to="(550,260)"/>
+    <wire from="(520,270)" to="(560,270)"/>
+    <wire from="(530,170)" to="(530,240)"/>
+    <wire from="(530,240)" to="(590,240)"/>
+    <wire from="(550,180)" to="(550,260)"/>
+    <wire from="(550,180)" to="(590,180)"/>
+    <wire from="(560,260)" to="(560,270)"/>
+    <wire from="(560,260)" to="(590,260)"/>
+    <wire from="(600,190)" to="(600,200)"/>
+    <wire from="(600,270)" to="(600,280)"/>
+    <wire from="(620,170)" to="(650,170)"/>
+    <wire from="(620,250)" to="(650,250)"/>
     <wire from="(80,100)" to="(250,100)"/>
     <wire from="(80,100)" to="(80,340)"/>
     <wire from="(80,340)" to="(250,340)"/>
