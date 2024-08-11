@@ -1,4 +1,4 @@
-# CS61CPU
+# 5-stage-pipelined-riscv-CPU
 
 Look ma, I made a CPU! Here's what I did:
 
